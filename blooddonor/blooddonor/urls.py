@@ -32,5 +32,5 @@ urlpatterns = [
     url(r'^',include(router.urls)),
     url(r'^myrest/', include('myrest.urls', namespace = 'rest')),
     url(r'^api-token-auth/', obtain_jwt_token), # url that obtains the auth token.
-    url(r'^myrest/users/', include('myrest.api.urls', namespace = 'users-api')),
+    url(r'^myrest/users/', include(('myrest.api.urls','mysrest'), namespace = 'users-api')),
 ]

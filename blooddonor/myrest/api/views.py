@@ -49,8 +49,6 @@ class UserCreateAPIView(CreateAPIView):
     permission_classes = [AllowAny]
 
 
-
-
 class UserLoginAPIView(APIView):
     permission_classes = [AllowAny]
     serializer_class = UserLoginSerializer

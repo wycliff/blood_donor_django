@@ -6,6 +6,8 @@ from .views import (
     UserLoginAPIView,
     )
 
+app_name = 'myrest'
+
 urlpatterns = [
 
     url(r'^register/$', UserCreateAPIView.as_view(), name='register'),
@@ -13,3 +15,5 @@ urlpatterns = [
 
     ]
     
+
+  
